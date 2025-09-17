@@ -1,6 +1,7 @@
 - [1 Intro](#1-intro)
   - [课程介绍](#课程介绍)
   - [正式内容](#正式内容)
+- [appendix: 一个脑图](#appendix-一个脑图)
 
 ## 1 Intro
 
@@ -70,4 +71,31 @@ io 还可以使用 DMA 加速。
 进程：进行中的程序，而program（程序）只是一个‘序’，不执行的时候就跟普通的文件没什么区别，program只是定义了运行时的各种操作以及所需要的数据。
 
 process 需要硬件资源，单线程进程有一个program counter，记录‘序’在哪里；多线程进程中每一个线程都有一个program counter，好像一个浏览器中打开的不同的窗口。
+
+
+
+## appendix: 一个脑图
+
+- Introduction:
+  - What does OS do
+  - Computer System:操作系统在计算机系统内构建，我们首先要了解计算机系统
+    - CS Organization:
+      - Components
+      - Connected through bus
+      - Compete for memory
+      正是由于资源竞争我们才迫切需要OS。 
+    - CS Architecture
+      - Interrupt：解决不同设备之间速度差异带来的低效问题
+      - IO Structure：两种处理IO的方式，等待和中断。
+      - Storage structure
+  - Operating System:
+    - Structure: Multiprogramming/Multitasking
+  - OS operations:
+    - Dual Mode：用户的权限和操作系统的权限应当不一样
+    - Timer：避免僵尸进程占据资源
+  - Resource Management:
+    - 进程管理
+    - 内存管理
+    - IO管理
+    - 存储管理
 
